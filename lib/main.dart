@@ -199,7 +199,7 @@ class _AnxietyDashboardState extends State<AnxietyDashboard>
         boxShadow: [
           BoxShadow(
             color: color.withOpacity(0.6),
-            blurRadius: 25,
+            blurRadius: 8,
             spreadRadius: 3,
           ),
         ],
@@ -211,7 +211,7 @@ class _AnxietyDashboardState extends State<AnxietyDashboard>
             animation: pulseController,
             builder: (context, child) {
               return Transform.scale(
-                scale: 1 + (pulseController.value * 0.15),
+                scale: 1 + (pulseController.value * 0.12),
                 child: child,
               );
             },
